@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+p{
+  color: rgb(85, 85, 85)
+}
+
+
+/* Transition */
+
+a, .btn {
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+
+/* Side Bar */
+
+.side-bar {
+  position: fixed;
+  top: 50%;
+  left: 2%; /* Moves the sidebar to the left side of the screen */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%; /* Ensures lines extend halfway up and down */
+}
+
+.left {
+  left: 2%; /* Positions the left sidebar */
+}
+
+.right {
+  left: 96%; /* Positions the right sidebar */
+}
+
+.line {
+  width: 1px;
+  background-color: rgb(46, 45, 45);
+  flex-grow: 1;
+}
+
+.sidebar-name {
+  writing-mode: vertical-rl; /* Rotates the text vertically */
+  transform: rotate(180deg); /* Flips the text to read from top to bottom */
+  margin: 1rem 0; /* Space between lines and text */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(46, 45, 45); /* Match the line color */
+}
+
+.icons {
+  display: flex;
+  flex-direction: column; /* Arrange icons vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.navicon {
+  fill: rgb(0, 0, 0); /* Default fill color */
+  transition: fill 0.3s ease, transform 0.3s cubic-bezier(0.25, 1.5, 0.5, 1.5);
+  margin: 15px 0; /* Space between icons */
+  width: 30px; /* Smaller icon size */
+  height: 30px; /* Smaller icon size */
+}
+
+.navicon:hover {
+  cursor: pointer;
+  fill: rgb(31, 98, 222); /* Hover fill color */
+  transform: translateY(-1px); /* Bounce up effect */
+  
+}
+
+/* Desktop Nav */
+
+nav, .navbar-links{
+  text-decoration: none;
+  font-size:25px;
+  list-style: none;
+  display:flex;
+}
+
+nav{
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+
+.navbar-links{
+  color:black;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+a{
+  color:black;
+  text-decoration:none;
+  text-underline-offset: 1rem;
+  text-decoration-color:white;
+}
+
+a:hover{
+  color:rgb(95, 159, 249);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color:rgb(95, 159, 249);
+
+}
+
+/* Logo */
+.logo{
+  top: 10px;
+  right:10px;
+  position:relative;
+  width: 40px;
+  margin-right:40px;
+}
+
+/* Hamburger Menu */
+
+#hamburger-nav{
+  display:none;
+ }
+
+.hamburger-menu{
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height:24px;
+  width: 30px;
+  cursor:pointer;
+}
+
+.hamburger-icon span {
+  width:100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+#hamburger-list{
+  color:blue
+}
+
+.menu-links{
+  position: absolute;
+  top: 100%;
+  right:0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a{
+  display:block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+  text-underline-offset: 1rem;
+  text-decoration-color: white; /* Make underline invisible initially */
+}
+
+.menu-links a:hover {
+  color: rgb(95, 159, 249); /* Match the hover color */
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(95, 159, 249); /* Change underline color on hover */
+}
+
+/*Makes sure that the icons are structured correctly when the hamgburger menu is closed and opened */
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity:0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+  transform: none;
+}
+
+.hamburger-icon span:first-child{
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+  transform: none;
+}
+
+/* Profile */
+
+section {
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+
+
+/* Projects */
+
+/* Projects container */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Space between rows */
+  margin-top: 2rem;
+}
+
+/* Project group */
+.product-group {
+  display: flex;
+  align-items: center;
+  gap: 4rem; /* Space between image and description */
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* On hover effect */
+.product-group:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Project images */
+.product-image {
+  border:solid 0.1rem;
+  border-color: #000000;
+  object-fit: cover;
+  height: 20rem;
+  width: 28rem;
+  border-radius: 1.5rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product-image:hover {
+  opacity: 0.5; /* Image fades to 50% opacity */
+  transform: scale(1.05); /* Zoom effect */
+}
+
+/* On hover image zoom */
+.product-group:hover{
+  transform: scale(1.05); /* Zoom effect on hover */
+  opacity: 0.9;
+}
+
+/* Project description styling */
+.product-description {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.product-description h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.product-description p {
+  margin-bottom: 1rem;
+}
+
+a.product-link {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  color: #ffffff; /* Ensure button text stays white */
+  background-color: #3498db;
+  text-decoration: none; /* Prevent underline */
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a.product-link:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  text-decoration: none; /* No underline on hover */
+}
+
+/* Active/Focus effect */
+.product-link:active {
+  background-color: #1f6391; /* Even darker shade for click effect */
+  transform: translateY(1px); /* Slight press down effect */
+}
+
+/* Alternating layout */
+.product-left {
+  flex-direction: row;
+  padding-left: 2rem;
+}
+
+/* Alternating layout */
+.product-right {
+  flex-direction: row;
+  padding-left:2rem;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="assets/images/logo3.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css"/>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="desktop-nav">
+      <p><img class="logo"src="assets/images/ShopEaseIcon.pdf" alt=""/>ShopEase</p>
+      <ul class="navbar-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>   
+    </ul>
+    </nav> 
+
+    <!-- Hamburger Menu -->
+     <nav id="hamburger-nav">
+      <p><img class="logo"src="assets/images/ShopEaseIcon.pdf" alt="ShopEaseIcon.pdf"/>ShopStuff</p>
+      <div class = "hamburger-menu">
+      <div class = "hamburger-icon" onclick= "toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>   
+    </ul>
+      </div>
+    </div>
+     </nav>
+
+    <!-- Products -->
+<section id="products">
+  <p class="section_text_p1">View</p>
+  <h1 class="title">Products</h1>
+
+  <div class="product-container">
+    <!-- First product (left) -->
+    <div class="product-group product-left">
+      <img class="product-image" src="assets/images/asics.webp" alt="Product Image" />
+      <div class="product-description">
+        <h2>Asics Gel</h2>
+        <p>Enhanced comfort. By reducing impact and increasing shock absorption, runners feel better during and after runs. Improved stability.</p>
+        <a href="#" class="product-link">Add to Cart</a>
+        <a href="#" class="product-link">View Product</a>
+      </div>
+    </div>
+
+    <!-- Second product (right) -->
+    <div class="product-group product-right">
+      <div class="product-description">
+        <h2>Beats</h2>
+        <p>Beats by Dre brings you the best in wireless headphones, earbuds and music, with style and immersive sound. </p>
+        <div>
+          <a href="#" class="product-link">Add to Cart</a>
+          <a href="#" class="product-link">View Product</a>
+      </div>
+      </div>
+      <img class="product-image" src="assets/images/beats.jpeg" alt="Product Image" />
+    </div>
+
+    <!-- Third product (left) -->
+    <div class="product-group product-left">
+      <img class="product-image" src="assets/images/hoodie.jpeg" alt="Product Image" />
+      <div class="product-description">
+        <h2>Hoodie</h2>
+        <p>Step up your casual look with our men's sweatshirts and hoodies.</p>
+        <a href="#" class="product-link">Add to Cart</a>
+        <a href="#" class="product-link">View Product</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact -->
+    <div></div>
+  </nav>
+
+  <script src="script.js"></script>
+  </body>
+</html>
