@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase</title>
+    <link rel="icon" type="image/png" href="assets/images/ShopEaseIcon5.png" class = "circle-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+  
+    <!-- Hamburger Menu -->
+    <nav id="hamburger-nav">
+      <p><img class="logo"src="assets/images/ShopEaseIcon.png" alt=""/>ShopEase</p>
+      <div class = "hamburger-menu">
+      <div class = "hamburger-icon" onclick= "toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+        <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="cart.html" onclick="toggleMenu()">Cart</a></li>
+      <li><a href="checkout.html" onclick="toggleMenu()">Checkout</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>   
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li> 
+    </ul>
+      </div>
+    </div>
+     </nav>
+
+    <!-- Products -->
+<section id="products">
+  <p class="section_text_p1">Browse</p>
+  <h1 class="title">Products</h1>
+
+  <div class="product-container">
+    <!-- First product -->
+    <div class="product-group product-left">
+      <img class="product-image" src="assets/images/asics.webp" alt="Product Image" />
+      <div class="product-description">
+        <h2>Asics</h2>
+        <p>Enhanced comfort. By reducing impact and increasing shock absorption, runners feel better during and after runs. Improved stability.</p>
+        <a class="product-link" data-name="Asics Gel" data-price="100">Add to Cart</a>
+      </div>
+    </div>
+
+    <!-- Second product -->
+    <div class="product-group product-right">
+      <div class="product-description">
+        <h2>Beats</h2>
+        <p>Beats by Dre brings you the best in wireless headphones, earbuds, and immersive sound.</p>
+        <a class="product-link" data-name="Beats" data-price="300">Add to Cart</a>
+      </div>
+      <img class="product-image" src="assets/images/beats.jpeg" alt="Product Image" />
+    </div>
+
+    <!-- Third product -->
+    <div class="product-group product-left">
+      <img class="product-image" src="assets/images/hoodie.jpeg" alt="Product Image" />
+      <div class="product-description">
+        <h2>Hoodie</h2>
+        <p>Step up your casual look with our men's sweatshirts and hoodies.</p>
+        <a class="product-link" data-name="Hoodie" data-price="50">Add to Cart</a>
+      </div>
+    </div>
+
+    <!-- Fourth product -->
+    <div class="product-group product-right">
+      <div class="product-description">
+        <h2>Apple Watch</h2>
+        <p>The Apple Watch combines style and innovation, keeping you connected, active, and healthy with advanced fitness tracking, powerful apps, and seamless integration.</p>
+        <a class="product-link" data-name="Apple Watch" data-price="399">Add to Cart</a>
+      </div>
+      <img class="product-image" src="assets/images/applewatch.jpeg" alt="Product Image" />
+    </div>
+  </div>
+</section>
+
+    <script src="cart.js"></script>
+    <script>src="hamburger.js"</script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

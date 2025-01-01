@@ -3,27 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" href="assets/images/logo3.png" />
+    <title>ShopEase</title>
+    <link rel="icon" type="image/png" href="assets/images/ShopEaseIcon5.png" class = "circle-icon">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="desktop-nav">
-      <p><img class="logo"src="assets/images/ShopEaseIcon.pdf" alt=""/>ShopEase</p>
-      <ul class="navbar-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#cart">Cart</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>   
-    </ul>
-    </nav> 
-
+  
     <!-- Hamburger Menu -->
-     <nav id="hamburger-nav">
-      <p><img class="logo"src="assets/images/ShopEaseIcon.pdf" alt="ShopEaseIcon.pdf"/>ShopStuff</p>
+    <nav id="hamburger-nav">
+      <p><img class="logo"src="assets/images/ShopEaseIcon.png" alt=""/>ShopEase</p>
       <div class = "hamburger-menu">
       <div class = "hamburger-icon" onclick= "toggleMenu()">
         <span></span>
@@ -32,62 +21,108 @@
       </div>
       <div class="menu-links">
         <ul>
-        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-      <li><a href="#about" onclick="toggleMenu()">About</a></li>
-      <li><a href="#products" onclick="toggleMenu()">Products</a></li>
-      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>   
+        <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="cart.html" onclick="toggleMenu()">Cart</a></li>
+      <li><a href="checkout.html" onclick="toggleMenu()">Checkout</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>   
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li> 
     </ul>
       </div>
     </div>
      </nav>
 
-    <!-- Products -->
-<section id="products">
-  <p class="section_text_p1">View</p>
-  <h1 class="title">Products</h1>
+     <!-- Products -->
+     <section id="products">
+      <p class="section_text_p1">Browse</p>
+      <h1 class="title">Products</h1>
+    
+      <!-- Clothing Section -->
+      <div class="category">
+        <h2 class="category-title">Clothing</h2>
+        <div class="home-product-row-container">
 
-  <div class="product-container">
-    <!-- First product (left) -->
-    <div class="product-group product-left">
-      <img class="product-image" src="assets/images/asics.webp" alt="Product Image" />
-      <div class="product-description">
-        <h2>Asics Gel</h2>
-        <p>Enhanced comfort. By reducing impact and increasing shock absorption, runners feel better during and after runs. Improved stability.</p>
-        <a href="#" class="product-link">Add to Cart</a>
-        <a href="#" class="product-link">View Product</a>
+          <!-- Asics Product -->
+          <div class="home-product-card">
+            <img src="assets/images/asics.webp" alt="Asics Image" />
+            <div class="product-description">
+              <h2>Asics</h2>
+              <p class = "price">$150.00</p>
+            </div>
+          </div>
+
+          <!-- Sambas Product -->
+          <div class="home-product-card">
+            <img src="assets/images/sambas.png" alt="Asics Image" />
+            <div class="product-description">
+              <h2>Sambas</h2>
+              <p class = "price">$90.00</p>
+            </div>
+          </div>
+
+          <!-- Hoodie Product -->
+          <div class="home-product-card">
+            <img src="assets/images/hoodie.jpeg" alt="Hoodie Image" />
+            <div class="product-description">
+              <h2>Hoodie</h2>
+              <p class = "sale-new"> $49.99 <s class = "sale-old">59.99</s></p>
+              <p class = "sale-description">Save Big! 20-50% Off on All Sale Items</p>
+            </div>
+          </div>
+
+          <!-- Jeans Product -->
+          <div class="home-product-card">
+            <img src="assets/images/Jeans2.webp" alt="Hoodie Image" />
+            <div class="product-description">
+              <h2>Jeans</h2>
+              <p class = "price">$34.99</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    
+      <!-- Technology Section -->
+      <div class="category">
+        <h2 class="category-title">Technology</h2>
+        <div class="home-product-row-container">
+          
+    
+          <!-- Beats Product -->
+          <div class="home-product-card">
+            <img src="assets/images/beats.jpeg" alt="Beats Image" />
+            <div class="product-description">
+              <h2>Beats</h2>
+              <p class = "price">$300.00</p>
+              <a class="product-link" data-name="Beats" data-price="300">Add to Cart</a>
+            </div>
+          </div>
+          
+          <!-- Beats Product -->
+          <div class="home-product-card">
+            <img src="assets/images/ipad.webp" alt="Beats Image" />
+            <div class="product-description">
+              <h2>iPad</h2>
+              <p class = "price">$599.00</p>
+              <a class="product-link" data-name="Beats" data-price="599">Add to Cart</a>
+            </div>
+          </div>
 
-    <!-- Second product (right) -->
-    <div class="product-group product-right">
-      <div class="product-description">
-        <h2>Beats</h2>
-        <p>Beats by Dre brings you the best in wireless headphones, earbuds and music, with style and immersive sound. </p>
-        <div>
-          <a href="#" class="product-link">Add to Cart</a>
-          <a href="#" class="product-link">View Product</a>
+          <!-- Apple Watch Product -->
+          <div class="home-product-card">
+            <img src="assets/images/applewatch.webp" alt="Apple Watch Image" />
+            <div class="product-description">
+              <h2>Apple Watch</h2>
+              <p class = "price">$399.99</p>
+              <a class="product-link" data-name="Apple Watch" data-price="399">Add to Cart</a>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      <img class="product-image" src="assets/images/beats.jpeg" alt="Product Image" />
-    </div>
+    </section>
+    
+    
 
-    <!-- Third product (left) -->
-    <div class="product-group product-left">
-      <img class="product-image" src="assets/images/hoodie.jpeg" alt="Product Image" />
-      <div class="product-description">
-        <h2>Hoodie</h2>
-        <p>Step up your casual look with our men's sweatshirts and hoodies.</p>
-        <a href="#" class="product-link">Add to Cart</a>
-        <a href="#" class="product-link">View Product</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- Contact -->
-    <div></div>
-  </nav>
-
-  <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>src="hamburger.js"</script>
+    <script src="navbar.js"></script>
   </body>
 </html>

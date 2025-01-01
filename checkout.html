@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="icon" type="image/png" href="assets/images/ShopEaseIcon5.png" class = "circle-icon">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Checkout Section -->
+    <section id="checkout">
+      <div class="checkout-container">
+        <!-- Order Summary -->
+        <div class="cart-summary">
+          <p id="subtotal"></p>
+          <p id="total"></p>
+        </div>
+
+        <!-- Checkout Form -->
+          <form id="checkout-form" action="http://localhost:3000/purchase-email" method="POST">
+          <input type="text" id="name" name="name" placeholder="Name" required />
+          <input type="email" id="email" name="email" placeholder="Email" required />
+          <input type="text" id="phone" name="phone" placeholder="Phone Number" />
+          <input
+            id="address"
+            name="address"
+            rows="2"
+            placeholder="Address"
+            readonly
+          ></input>
+          <button type="submit" class="checkout-btn">Purchase</button>
+
+          <!-- Hidden Fields for Email -->
+          <input type="hidden" name="_subject" value="Your Order is Confirmed">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+        </form>
+      </div>
+    </section>
+
+    <script src="checkout.js"></script>
+    <script src="navbar.js"></script>
+  </body>
+</html>

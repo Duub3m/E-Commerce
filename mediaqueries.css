@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+      display:none;
+    }
+    #hamburger-nav{
+      display: flex;
+    }
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Media Queries for Responsiveness */
+  /* Makes sure that the Button Size Remains Fixed in Media Queries */
+    @media (max-width: 1200px) {
+        .product-link {
+        width: 150px; 
+        height: 30px; 
+        }
+    }
+@media (max-width: 1200px) {
+    /* Stack text and button below the image */
+    .product-group {
+      align-items: center;
+      size:30rem;
+
+      flex-direction: column; /* vertically */
+      text-align: center;
+      gap: 1.5rem;
+    }
+  
+    .product-image {
+      size:30rem;
+
+      height: auto; /* Maintains the aspect ratio */
+    }
+  
+    .product-description {
+      margin: 0 auto; /* Center the description */
+      padding: 0 1rem;
+    }
+  
+    .product-link {
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+  
+  @media (max-width: 860px) {
+    /* Adjustments for smaller screens */
+    .product-group {
+      padding: 1rem;
+    }
+  
+    .product-image {
+      size:30rem;
+      width: 90%; /* Slight margin on smaller screens */
+    }
+  
+    .product-description h2 {
+      font-size: 1.4rem; /* Slightly smaller font */
+    }
+  
+    .product-link {
+      font-size: 1rem; 
+      padding: 0.5rem 1.5rem;
+    }
+  }
+
+  @media (max-width: 649px) {
+
+    /* Adjustments for smaller screens Pt2 */
+    .product-group {
+      padding: 1rem;
+    }
+  
+    .product-image {
+      size:30rem;
+      width: 90%; 
+    }
+  
+    .product-description h2 {
+      font-size: 1rem; 
+    }
+    .product-description p{
+        font-size: 0.9rem; 
+    }
+  
+    .product-link {
+      font-size: 1rem; 
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  

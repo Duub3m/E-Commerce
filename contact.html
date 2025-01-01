@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="assets/images/ShopEaseIcon5.png" class = "circle-icon">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hamburger Menu -->
+    <nav id="hamburger-nav">
+        <p><img class="logo"src="assets/images/ShopEaseIcon.png" alt=""/>ShopEase</p>
+        <div class = "hamburger-menu">
+        <div class = "hamburger-icon" onclick= "toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+          <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="cart.html" onclick="toggleMenu()">Cart</a></li>
+        <li><a href="checkout.html" onclick="toggleMenu()">Checkout</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>   
+        <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li> 
+      </ul>
+        </div>
+      </div>
+       </nav>
+       
+    <!-- Contact Section -->
+    <section id="cart">
+      <p class="section_text_p1">Have Questions?</p>
+      <h1 class="title">We'd Love to Hear from You</h1>
+    <div class="contact-container">
+        <form action="http://localhost:3000/contact-email" method="POST">
+          <h1 class = "title3">Contact Us</h1>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="phone" placeholder="Phone Number" />
+            <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+            <button type="submit">Send</button>
+
+            <!-- Hidden Fields for FormSubmit -->
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+        </form>
+    </div>
+    </section>
+    <script src="navbar.js"></script>
+</body>
+</html>
